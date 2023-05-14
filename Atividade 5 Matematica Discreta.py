@@ -17,3 +17,31 @@ else:
 
 # Saída do resultado
 print("Resultado: S =", S)
+
+#Implemente a recursividade para imprimir todos os números pares entre 1 a 10.
+
+#Implemente sem usar a recursividade e print as duas telas.
+
+
+
+#Implementação da recursividade para imprimir todos os números pares entre 1 a 10:
+
+def print_pares_rec(n):
+  if n > 10:
+    return
+  if n % 2 == 0:
+    print(n)
+  print_pares_rec(n+1)
+
+print_pares_rec(1)
+
+
+#Implementação sem usar a recursividade:
+
+for i in range(1, 11):
+  if i % 2 == 0:
+    print(i)
+
+
+
+
